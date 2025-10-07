@@ -1,17 +1,18 @@
 
 import { GoogleGenAI } from "@google/genai";
 
-// Ensure API key is available in the environment variables
 const API_KEY = process.env.API_KEY;
 
-if (!API_KEY) {
+let ai: GoogleGenAI | null = null;
+
+if (API_KEY) {
+  ai = new GoogleGenAI({ apiKey: API_KEY });
+} else {
   console.warn("Gemini API key not found. AI features will be disabled.");
 }
 
-const ai = new GoogleGenAI({ apiKey: API_KEY! });
-
 export const getHint = async (questionPrompt: string, codeSnippet?: string): Promise<string> => {
-  if (!API_KEY) {
+  if (!ai) {
     return "AI hints are currently unavailable.";
   }
   
