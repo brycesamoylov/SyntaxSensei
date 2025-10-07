@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
@@ -79,10 +78,10 @@ export const Dashboard = () => {
                     <h2 className="text-2xl font-bold">Continue Your Journey</h2>
                     <p className="mt-2 mb-4 text-green-100">Pick up where you left off in Python Basics.</p>
                     <Link
-                        to="/lessons/python-basics-1"
+                        to="/unit/python-basics"
                         className="bg-white text-emerald-700 font-semibold px-6 py-2 rounded-md hover:bg-green-100 transition-all"
                     >
-                        Start Lesson
+                        View Lessons
                     </Link>
                 </div>
             </div>
