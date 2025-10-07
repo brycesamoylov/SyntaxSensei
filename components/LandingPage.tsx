@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import { Header } from './Header';
 import { CheckCircleIcon, BookOpenIcon, TrophyIcon } from './Icons';
 
-// Fix: Defined a 'FeatureProps' interface for the component's props to ensure proper type checking for the 'children' prop.
-interface FeatureProps {
+// Fix: Explicitly defined a 'FeatureProps' type for the component's props to ensure proper type checking for all props, including 'children'.
+type FeatureProps = {
   icon: React.ReactNode;
   title: string;
   children: React.ReactNode;
-}
+};
 
 const Feature = ({ icon, title, children }: FeatureProps) => (
   <div className="bg-slate-800/50 p-6 rounded-lg">

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getUnit } from '../services/api';
@@ -7,7 +6,14 @@ import { useProgressStore } from '../store/stores';
 import { LockClosedIcon, StarIcon } from './Icons';
 import { motion } from 'framer-motion';
 
-const LessonCard = ({ lesson, userXp, isFirst }: { lesson: LessonSummary; userXp: number; isFirst: boolean; }) => {
+// Fix: Extracted inline props to a named interface to prevent TypeScript errors with the special 'key' prop.
+interface LessonCardProps {
+    lesson: LessonSummary;
+    userXp: number;
+    isFirst: boolean;
+}
+
+const LessonCard = ({ lesson, userXp, isFirst }: LessonCardProps) => {
     const isUnlocked = userXp >= lesson.xpRequired;
     const cardVariants = {
         hidden: { opacity: 0, y: 20 },
