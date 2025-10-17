@@ -29,10 +29,10 @@ export const LandingPage = () => {
         <section className="py-20 sm:py-32">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-sky-500 tracking-tight">
-              Master Python, One Lesson at a Time.
+              Master Python with Fun, Interactive Lessons.
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-lg text-slate-300">
-              Syntax Sensei is a gamified learning platform that makes mastering Python fun and effective. Learn through bite-sized lessons, get instant feedback, and track your progress.
+              Syntax Sensei makes learning Python fun. No more challenges that are too hard or too easy. Earn XP to belt up and share your progress as you go.
             </p>
             <div className="mt-10">
               <Link
@@ -49,18 +49,18 @@ export const LandingPage = () => {
         <section className="py-20 bg-slate-950/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-white">Why Syntax Sensei?</h2>
-              <p className="text-slate-400 mt-2">A better way to learn to code.</p>
+              <h2 className="text-3xl font-bold text-white">A Better Way to Learn</h2>
+              <p className="text-slate-400 mt-2">Our methodology is designed for retention and engagement.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <Feature icon={<CheckCircleIcon className="w-8 h-8 text-emerald-500" />} title="Instant Feedback">
-                Get immediate validation on your answers to learn faster and reinforce concepts effectively. No more waiting or guessing.
+                No more waiting to see if you're right. Get instant feedback on every answer so you can learn faster.
               </Feature>
-              <Feature icon={<BookOpenIcon className="w-8 h-8 text-sky-500" />} title="Adaptive Lessons">
-                Our system adjusts the difficulty based on your performance, ensuring you're always challenged but never overwhelmed.
+              <Feature icon={<BookOpenIcon className="w-8 h-8 text-sky-500" />} title="Engaging Lessons">
+                Our lessons are designed to be enjoyable and rewarding. Say goodbye to dry, boring exercises.
               </Feature>
               <Feature icon={<TrophyIcon className="w-8 h-8 text-yellow-500" />} title="Gamified Experience">
-                Earn experience points (XP), build up your daily streak, and climb the leaderboard. Learning to code has never been more motivating.
+                XP, streaks, and leaderboards make learning feel less like a chore and more like a game.
               </Feature>
             </div>
           </div>
